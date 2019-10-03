@@ -11,7 +11,7 @@ class Owner
   end
 
   def self.all
-    return @@all
+    @@all
   end
 
   def say_species
