@@ -67,10 +67,10 @@ class Owner
   def list_pets
     pets = []
     pets << Cat.all.select {|cat|
-      cat.owner = self
+      cat.owner == self
     }
     pets << Dog.all.select {|dog|
-      
+      dog.owner == self 
     }
   end
 
