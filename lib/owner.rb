@@ -25,6 +25,12 @@ class Owner
   def self.reset_all
     @@all = []
   end
+
+  def cats
+  end
+
+  def dogs
+  end
   
   def buy_cat
   end
