@@ -43,16 +43,7 @@ class Owner
   end
 
   def buy_cat(name)
-    Cat.all.each {|cat|
-      if (cat.name == name)
-        cat.owner = self
-        @cats << cat
-        break
-      end
-    }
-    #puts @cats.count
-    #
-    @cats
+    Cat.new(name, self)
   end
 
   def sell_cat
