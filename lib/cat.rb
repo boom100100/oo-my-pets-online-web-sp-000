@@ -9,6 +9,8 @@ class Cat
     @name = name
     @owner = owner
     @mood = mood
+
+    @owner.buy_cat(self)
     @@all << self
     self
   end
