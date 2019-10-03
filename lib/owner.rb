@@ -28,7 +28,7 @@ class Owner
 
   def cats
     @@all.select {|pet|
-      pet.class == Cat
+      puts pet
     }
   end
 
