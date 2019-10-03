@@ -50,7 +50,7 @@ class Owner
         cat.owner = self
       end
 
-    }
+    
   end
 
   def sell_cat
