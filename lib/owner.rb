@@ -56,6 +56,6 @@ class Owner
   def  sell_dog
   end
 
-  def walk_dog
+  def walk_dogs
   end
 end
