@@ -8,6 +8,7 @@ class Owner
 
   def buy_dog
   end
+  
   def  sell_dog
   end
 end
