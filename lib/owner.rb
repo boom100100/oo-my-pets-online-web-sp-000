@@ -46,6 +46,7 @@ class Owner
     Cat.all.each {|cat|
       if (cat.name == name && cat.owner != self)
         @cats << cat
+        cat.owner = self
       end
 
     }
