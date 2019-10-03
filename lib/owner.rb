@@ -1,13 +1,13 @@
 class Owner
   # code goes here
-  attr_accessor :pets
+  #attr_accessor 
   attr_reader :species, :name
   @@all = []
 
   def initialize(name)
     @name = name
     @species = "human"
-    @pets = []
+
     @@all << self
     self
   end
@@ -29,13 +29,6 @@ class Owner
   end
 
   def cats
-    cats = []
-    puts @pets
-    @pets.each {|pet|
-      if (pet.class = Cat)
-        cats << pet
-      end
-    }
   end
 
   def dogs
