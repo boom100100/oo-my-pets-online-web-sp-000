@@ -31,7 +31,6 @@ class Owner
   def cats
     @pets.select {|pet|
       pet.class = Cat
-
     }
   end
 
