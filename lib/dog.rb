@@ -9,6 +9,8 @@ class Dog
     @name = name
     @owner = owner
     @mood = mood
+
+    @owner.buy_dog(self)
     @@all << self
     self
   end
