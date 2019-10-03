@@ -48,9 +48,9 @@ class Owner
     }
         @cats << cat
         cat.owner = self
-      end
+      
 
-    
+
   end
 
   def sell_cat
