@@ -28,7 +28,7 @@ class Owner
 
   def cats
     @@all.select {|pets|
-      pets
+      pets.is_a(Cat)
     }
   end
 
