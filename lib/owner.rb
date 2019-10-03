@@ -50,7 +50,7 @@ class Owner
         break
       end
     }
-    puts @cats
+    puts @cats.name
     @cats
   end
 
