@@ -64,6 +64,9 @@ class Owner
      }
   end
 
+  def list_pets
+  end
+
   def sell_pets
     Cat.all.each {|cat|
       if (cat.owner == self)
