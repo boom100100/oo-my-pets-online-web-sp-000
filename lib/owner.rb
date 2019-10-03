@@ -50,6 +50,8 @@ class Owner
         break
       end
     }
+    puts @cats
+    @cats
   end
 
   def sell_cat
