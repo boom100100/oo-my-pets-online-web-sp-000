@@ -40,8 +40,11 @@ class Owner
     }
   end
 
-  def buy_cat
+  def buy_cat(name)
+    Cats.all.select{|cat|
+      cat.name == name
 
+    }
   end
 
   def sell_cat
