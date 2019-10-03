@@ -34,6 +34,9 @@ class Owner
   end
 
   def dogs
+    @pets.select {|pet|
+      pet.class == Dog
+    }
   end
 
   def buy_cat(cat)
@@ -43,7 +46,8 @@ class Owner
   def sell_cat
   end
 
-  def buy_dog
+  def buy_dog(dog)
+    @pets << dog
   end
 
   def  sell_dog
