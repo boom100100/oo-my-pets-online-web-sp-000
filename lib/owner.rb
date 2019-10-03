@@ -65,6 +65,10 @@ class Owner
   end
 
   def list_pets
+    pets = []
+    pets << Cat.select {|cat|
+      cat.owner = self
+    }
   end
 
   def sell_pets
