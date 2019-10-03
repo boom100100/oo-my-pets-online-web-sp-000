@@ -39,8 +39,11 @@ class Owner
     }
   end
 
-  def buy_cat(cat)
-    @pets << cat
+  def buy_cat(catName)
+    Cats.all.select {|cat|
+      cat.name == catName
+
+    }
     cats
   end
 
