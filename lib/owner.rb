@@ -43,7 +43,7 @@ class Owner
   end
 
   def buy_cat(name)
-    cat = Cat.all.find {}|cat|
+    cat = Cat.all.find {|cat|
       cat.name == name
     }
         @cats << cat
