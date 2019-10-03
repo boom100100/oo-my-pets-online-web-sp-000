@@ -50,11 +50,6 @@ class Owner
         break
       end
     }
-
-
-
-
-
   end
 
   def sell_cat
