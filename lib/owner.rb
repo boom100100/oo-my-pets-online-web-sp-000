@@ -42,7 +42,7 @@ class Owner
 
   def buy_cat(name)
     Cat.all.each {|cat|
-      if (cat.name == name)
+      if (cat.name == name && cat.owner != self)
         @pets << cat
       end
 
