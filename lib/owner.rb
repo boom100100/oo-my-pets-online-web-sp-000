@@ -3,6 +3,7 @@ class Owner
   attr_accessor :name, :species
 
   def say_species
+    return @species
   end
   def buy_cat
   end
