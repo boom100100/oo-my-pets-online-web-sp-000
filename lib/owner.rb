@@ -72,6 +72,7 @@ class Owner
     num_dogs = Dog.all.count {|dog|
       dog.owner == self
     }
+    "I have #{num_dogs} dog(s), and #{num_cats} cat(s)."
   end
 
   def sell_pets
