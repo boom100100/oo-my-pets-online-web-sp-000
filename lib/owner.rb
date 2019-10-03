@@ -1,6 +1,7 @@
 class Owner
   # code goes here
-  attr_accessor :name, :species
+  attr_accessor :species
+  attr_writer :name
 
   def say_species
     return @species
