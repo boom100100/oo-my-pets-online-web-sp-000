@@ -19,7 +19,7 @@ class Owner
   end
 
   def say_species
-    return @species
+    @species
   end
   def buy_cat
   end
