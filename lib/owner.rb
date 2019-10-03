@@ -43,8 +43,9 @@ class Owner
   end
 
   def buy_cat(name)
-    Cat.all.each {|cat|
-      if (cat.name == name && cat.owner != self)
+    cat = Cat.all.find {|cat|
+      cat.name == name
+    }
         @cats << cat
         cat.owner = self
       end
