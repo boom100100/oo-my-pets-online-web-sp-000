@@ -1,6 +1,6 @@
 class Owner
   # code goes here
-  attr_accessor 
+  attr_accessor
   attr_reader :species, :name
   @@all = []
 
@@ -44,14 +44,8 @@ class Owner
     Cat.new(name, self)
   end
 
-  def sell_cat
-  end
-
   def buy_dog(name)
     Dog.new(name, self)
-  end
-
-  def  sell_dog
   end
 
   def walk_dogs
@@ -68,5 +62,22 @@ class Owner
         cat.mood = "happy"
       end
      }
+  end
+
+  def sell_pets
+    Cat.all.each {|cat|
+      if (cat.owner == self)
+        cat.owner = ""
+        cat.mood = "nervous"
+      end
+     }
+
+     Dog.all.each {|dog|
+       if (dog.owner == self)
+         dog.owner = ""
+         dog.mood = "nervous"
+       end
+      }
+
   end
 end
