@@ -50,6 +50,7 @@ class Owner
         break
       end
     }
+    puts @cats.count
     @cats.each {|cat|
       puts cat.name
     }
