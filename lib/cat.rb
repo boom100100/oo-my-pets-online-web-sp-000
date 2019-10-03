@@ -10,7 +10,7 @@ class Cat
     @owner = owner
     @mood = mood
 
-    @owner.buy_cat(self)
+    //@owner.buy_cat(self)
     @@all << self
     self
   end
