@@ -13,5 +13,9 @@ class Cat
     self
   end
 
+  def all
+    @@all
+  end
+
 
 end
