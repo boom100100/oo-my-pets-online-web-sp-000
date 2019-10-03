@@ -46,9 +46,10 @@ class Owner
     cat = Cat.all.find {|cat|
       cat.name == name
     }
-        @cats << cat
-        cat.owner = self
-      
+      cat.owner = self
+      @cats << cat
+
+
 
 
   end
