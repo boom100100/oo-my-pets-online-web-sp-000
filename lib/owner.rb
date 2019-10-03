@@ -36,7 +36,8 @@ class Owner
   def dogs
   end
 
-  def buy_cat
+  def buy_cat(cat)
+    @pets << cat
   end
 
   def sell_cat
