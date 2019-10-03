@@ -14,6 +14,10 @@ class Owner
     @@all
   end
 
+  def self.count
+    @@all.count
+  end
+
   def say_species
     return @species
   end
