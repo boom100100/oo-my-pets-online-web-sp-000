@@ -36,8 +36,8 @@ class Owner
   end
 
   def dogs
-    @pets.select {|pet|
-      pet.class == Dog
+    Dog.all.select {|dog|
+      dog.owner == self
     }
   end
 
