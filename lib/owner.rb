@@ -29,8 +29,11 @@ class Owner
   end
 
   def cats
-    @pets.select {|pet|
-      pet.class = Cat
+    cats = []
+    @pets.each {|pet|
+      if (pet.class = Cat)
+        cats << pet
+      end
     }
   end
 
