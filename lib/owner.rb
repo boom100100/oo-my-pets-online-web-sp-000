@@ -29,7 +29,7 @@ class Owner
 
   def cats
     @pets.select {|pet|
-      puts pet
+      pet.class == Cat
     }
   end
 
