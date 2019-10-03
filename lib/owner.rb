@@ -6,6 +6,7 @@ class Owner
   def initialize(name)
     @name = name
     @species = "human"
+    @pets = []
     @@all << self
     self
   end
@@ -27,7 +28,7 @@ class Owner
   end
 
   def cats
-    @@all.select {|pet|
+    @pets.select {|pet|
       puts pet
     }
   end
