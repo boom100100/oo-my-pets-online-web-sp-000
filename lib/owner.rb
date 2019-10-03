@@ -56,7 +56,13 @@ class Owner
   end
 
   def buy_dog(dog)
-    @dogs << dog
+    Dog.all.each {|dog|
+      if (cat.name == name)
+        dog.owner = self
+        @dog << dog
+        break
+      end
+    }
   end
 
   def  sell_dog
