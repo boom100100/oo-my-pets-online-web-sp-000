@@ -1,6 +1,6 @@
 class Owner
   # code goes here
-  #attr_accessor 
+  #attr_accessor
   attr_reader :species, :name
   @@all = []
 
@@ -29,6 +29,9 @@ class Owner
   end
 
   def cats
+    pets.select {|pet|
+      pet.class == Cat
+    }
   end
 
   def dogs
