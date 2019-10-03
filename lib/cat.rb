@@ -1,6 +1,6 @@
 class Cat
   # code goes here
-  #attr_accessor
+  attr_accessor :name
   #attr_writer
   #attr_reader
 
