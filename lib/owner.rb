@@ -30,6 +30,7 @@ class Owner
 
   def cats
     cats = []
+    puts @pets
     @pets.each {|pet|
       if (pet.class = Cat)
         cats << pet
