@@ -43,11 +43,14 @@ class Owner
   end
 
   def buy_cat(name)
-    cat = Cat.all.find {|cat|
-      cat.name == name
+    Cat.all.each {|cat|
+      if (cat.name == name)
+        cat.owner = self
+        @cats << cat
+        break
+      end
     }
-      cat.owner = self
-      @cats << cat
+
 
 
 
